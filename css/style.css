@@ -1,0 +1,513 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ====================================================================================================================== */
+
+html {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+/* =============== HEADER ========================================================  */
+
+.header-container {
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+  height: 5rem;
+  border: 1px solid transparent;
+}
+
+.logo {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 24px;
+  line-height: 32px;
+  height: 4rem;
+}
+
+.academy-name {
+  position: relative;
+  display: inline;
+  margin-left: 75px;
+  padding-top: 15px;
+  font-size: 2.1rem;
+  font-weight: 500;
+}
+
+.dark-grey {
+  color: rgb(83, 83, 83);
+}
+
+.light-grey {
+  color: rgb(177, 174, 174);
+}
+
+.navigation ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0 24px 0 130px;
+}
+.navigation li {
+  float: left;
+}
+
+.navigation a {
+  margin-left: 16px;
+  line-height: 70px;
+  text-align: right;
+  text-decoration: none;
+}
+
+.nav-item {
+  padding-top: 5px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: rgb(83, 83, 83);
+}
+
+/* ===================== BANNER =============================== */
+
+.banner {
+  display: inline-flex;
+  width: 100%;
+  height: 880px;
+  background-color: rgb(177, 174, 174);
+}
+
+.img-1 {
+  width: 60%;
+  padding-top: 32px;
+  padding-left: 24px;
+}
+
+.banner-text {
+  margin-top: 190px;
+  margin-left: 24px;
+}
+
+.slogan {
+  font-size: 2.5rem;
+  font-weight: 700;
+  width: 510px;
+  color: rgb(83, 83, 83);
+}
+
+.description-1 {
+  font-size: 1.8rem;
+  color: rgb(83, 83, 83);
+  padding-top: 20px;
+  width: 510px;
+}
+
+.button {
+  margin-top: 50px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: rgb(83, 83, 83);
+  width: 510px;
+  height: 60px;
+}
+
+.start-here {
+  font-size: 2rem;
+  color: white;
+  padding-top: 8px;
+  text-decoration: none;
+  padding-left: 160px;
+}
+
+/* ============== INFORMATION ============================= */
+
+.information {
+  display: inline-flex;
+  width: 100%;
+  height: 880px;
+  margin-bottom: 132px;
+}
+
+.main-info {
+  padding: 32px 24px 32px 24px;
+}
+
+.img-2 {
+  width: 1110px;
+}
+
+.slogan-2 {
+  padding-top: 32px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  width: 1030px;
+  color: rgb(83, 83, 83);
+}
+
+.quote {
+  padding-top: 24px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  width: 1030px;
+  color: rgb(83, 83, 83);
+}
+
+.author {
+  padding: 32px 0px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  width: 510px;
+  color: rgb(83, 83, 83);
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  height: 1084px;
+  width: 100%;
+  padding-top: 32px;
+  padding-left: 2px;
+}
+.img-3 {
+  height: auto;
+}
+.aside-container-1 {
+  display: inline-flex;
+  flex-direction: row-wrap;
+  padding: 0px 16px 16px 16px;
+}
+.aside-block-1 {
+  padding-left: 15px;
+  padding-top: 60px;
+}
+.aside-head-1 {
+  font-size: 2rem;
+  color: rgb(83, 83, 83);
+  padding-bottom: 5px;
+}
+.aside-action-1 {
+  font-size: 1.3rem;
+  color: rgb(83, 83, 83);
+  padding-bottom: 10px;
+}
+.aside-read-more-1 {
+  font-size: 1.5rem;
+  color: rgb(89, 150, 230);
+  text-decoration: none;
+}
+
+.img-4 {
+  height: auto;
+}
+.aside-container-2 {
+  display: inline-flex;
+  flex-direction: row-wrap;
+  padding: 16px 16px;
+}
+.aside-block-2 {
+  padding-left: 15px;
+  padding-top: 60px;
+}
+.aside-head-2 {
+  font-size: 2rem;
+  color: rgb(83, 83, 83);
+  padding-bottom: 5px;
+}
+.aside-action-2 {
+  font-size: 1.3rem;
+  color: rgb(83, 83, 83);
+  padding-bottom: 10px;
+}
+.aside-read-more-2 {
+  font-size: 1.5rem;
+  color: rgb(89, 150, 230);
+  text-decoration: none;
+}
+.img-5 {
+  height: auto;
+}
+.aside-container-3 {
+  display: inline-flex;
+  padding: 16px 16px;
+  margin-top: 16px;
+  background-color: rgb(177, 174, 174);
+}
+.aside-block-3 {
+  padding-left: 15px;
+  padding-top: 60px;
+}
+.aside-head-3 {
+  font-size: 2rem;
+  color: rgb(83, 83, 83);
+  padding-bottom: 5px;
+}
+.aside-action-3 {
+  font-size: 1.3rem;
+  color: rgb(83, 83, 83);
+  padding-bottom: 10px;
+}
+.aside-read-more-3 {
+  font-size: 1.5rem;
+  color: rgb(89, 150, 230);
+  text-decoration: none;
+}
+
+/* ================ COURSES =========================== */
+
+.courses {
+  height: 1400px;
+  width: 100%;
+  display: grid;
+  grid-template: 15% 37% 37% 10%/ 72px 28% 28% 28% 106px;
+  grid-gap: 32px;
+  background-color: rgb(177, 174, 174);
+}
+.grid-img {
+  width: 100%;
+}
+.courses-header {
+  grid-area: 1 / 1 / 2 / 6;
+  display: inline-block;
+  width: 25rem;
+  height: auto;
+  margin-left: 800px;
+  padding-top: 80px;
+  font-size: 3rem;
+  color: rgb(83, 83, 83);
+  justify-self: center;
+  align-self: center;
+}
+.course-content-1 {
+  grid-area: 2 / 2 / 3 / 3;
+  background-color: white;
+}
+.course-content-2 {
+  grid-area: 2 / 3 / 3 / 4;
+  background-color: white;
+}
+.course-content-3 {
+  grid-area: 2 / 4 / 3 / 5;
+  background-color: white;
+}
+.course-content-4 {
+  grid-area: 3 / 2 / 4 / 3;
+  background-color: white;
+}
+.course-content-5 {
+  grid-area: 3/ 3 / 4 / 4;
+  background-color: white;
+}
+.course-content-6 {
+  grid-area: 3 / 4 / 4 / 5;
+  background-color: white;
+}
+.course-name {
+  color: rgb(83, 83, 83);
+  font-size: 2.3rem;
+  font-weight: 500;
+  padding-left: 16px;
+  padding-top: 16px;
+}
+
+.course-head {
+  color: rgb(177, 174, 174);
+  font-size: 1.5rem;
+  font-weight: lighter;
+  padding: 8px 16px 8px 16px;
+}
+.course-curriculum {
+  color: rgb(177, 174, 174);
+  font-size: 1.5rem;
+  font-weight: lighter;
+  padding-left: 16px;
+  padding-bottom: 24px;
+}
+
+/* ============= THESIS ====================== */
+
+.thesis-container {
+  width: 100%;
+  height: 900px;
+}
+
+.thesis-header {
+  color: rgb(83, 83, 83);
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin: 32px 800px;
+}
+.thesis-double-container {
+  display: flex;
+}
+.thesis-block-2 {
+  display: flex;
+  flex-direction: column;
+}
+.video-1 {
+  width: 1100px;
+  padding-left: 24px;
+}
+.thesis-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(83, 83, 83);
+  padding-top: 24px;
+  padding-left: 24px;
+}
+.thesis-paraghaph {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgb(177, 174, 174);
+  padding-top: 8px;
+  padding-left: 24px;
+}
+.thesis-aside {
+  width: 38%;
+  height: 700px;
+}
+.aside-container-4 {
+  display: inline-flex;
+  background-color: rgb(177, 174, 174);
+}
+.img-12 {
+  padding: 16px;
+}
+.fisma-head {
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(83, 83, 83);
+}
+.fisma-description {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgb(83, 83, 83);
+}
+.aside-container-5 {
+  display: inline-flex;
+}
+.img-13 {
+  padding: 16px;
+}
+.now-then-head {
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(83, 83, 83);
+}
+.studying-ny {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgb(177, 174, 174);
+}
+.small-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+}
+/* ====================== FOOTER ====================================== */
+
+.footer-divider {
+  display: inline-flex;
+  border-top: thin solid rgb(177, 174, 174);
+  width: 100%;
+  height: 100px;
+  margin-top: 16px;
+}
+.copyright {
+  font-size: 1rem;
+  color: rgb(83, 83, 83);
+  padding-top: 16px;
+  padding-left: 24px;
+  width: 50%;
+}
+.terms-privacy {
+  padding-top: 16px;
+  margin-left: 40%;
+}
+ul .footer-list li {
+  list-style: none;
+}
+.li-container {
+  display: inline-flex;
+  flex-direction: row;
+  padding-left: 8px;
+}
+.t-c {
+  font-size: 1rem;
+  color: rgb(83, 83, 83);
+  text-decoration: none;
+}
